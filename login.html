@@ -1,37 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>Fri - Menjalnica!</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="FRI MENJAVE URNIKOV">
-    <meta name="author" content="Nick Jokic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" onload="if(media!='all')media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" onload="if(media!='all')media='all'">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,500italic,400italic,300italic,100italic,100&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' onload="if(media!='all')media='all'">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+	<link rel="icon" type="img/ico" href="favicon.ico">
 </head>
-
-<body>
-
-    <section id="main">
-        <div class="login-page">
-            <div class="form">
-                <form class="loginForm">
-                    <input type="text" placeholder="ime" />
-                    <input type="text" placeholder="vpisna številka" />
-                    <input type="mail" placeholder="e-pošta"/>
-                    <button id="vpisSubmit">Vpiši me!</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/login.js"></script>
+<body bgcolor="#92CDCF">
+	<div id="logo">
+	<font class="bold">FRI</font><font class="thick">menjava</font>
+	</div>
+	<div id="prijava">
+		<form action="login.php" method="post">
+			<input type="text" class="ime" name="Ime" placeholder="Ime">
+			<br>
+			<input type="text" class="ostalo" name="Email" placeholder="email">
+			<br>
+			<input type="text" class="ostalo" name="Vpisna" placeholder="Vpisna številka">
+			<br>
+			<input type="submit" id="sub" value="Prijava">
+		</form>
+	</div>
 </body>
+</html>
