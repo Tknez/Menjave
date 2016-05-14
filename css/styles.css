@@ -1,0 +1,15 @@
+html, body{
+    width: 100%;
+    font-size: 1em;
+}
+
+
+#seznam{
+    margin-top:50px;
+    padding: 10px;
+    min-height:40vh;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    
+}
+
