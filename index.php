@@ -8,7 +8,7 @@
     <meta name="description" content="FRI MENJAVE URNIKOV">
     <meta name="author" content="Nick Jokic">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" onload="if(media!='all')media='all'">
@@ -16,10 +16,18 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,500italic,400italic,300italic,100italic,100&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' onload="if(media!='all')media='all'">
 </head>
 
+<?php
+	include ("connect.php");
+	session_start();
+	mysql_query("SET NAMES 'utf8'");
+	$Vpisna = $_SESSION['vpisna'];
+	if(!$Vpisna)
+	{
+		header('Location: login.php');
+	}
+?>
+
 <body>
-
-
-
     <section id="intro">
 
         <div class="container text-center">
@@ -42,7 +50,7 @@
 
             <div class="row" id="seznam">
                 <div class="col-lg-12">
-                    <p>Prva ponudba</p>
+                    <p><?php echo $Vpisna; ?></p>
                     <p>Druga</p>
                 </div>
             </div>
