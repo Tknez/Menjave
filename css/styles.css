@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     background-color: black;
     width: 100%;
     color: white;
@@ -6,45 +7,43 @@ html, body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1em;
-    letter-spacing: 0.25em; 
+    letter-spacing: 0.25em;
 }
 
-section{
+section {
     padding: 30px;
 }
 
-i{
-    color:white;
+i {
+    color: white;
 }
 
-#seznam{
-    margin-top:50px;
+#seznam {
+    margin-top: 50px;
     padding: 10px;
-    min-height:40vh;
-    background-color: rgba(220,220,220,0.6);
+    min-height: 40vh;
+    background-color: rgba(10, 10, 10, 0.6);
     border-radius: 5px;
-    
 }
-.dodajZamenjavo{
-    margin-top:50px;
+
+.dodajZamenjavo {
+    margin-top: 50px;
     padding: 10px;
     /*background-color: rgba(220,220,220,0.6);*/
     border-radius: 5px;
 }
 
-.iconWhite{
+.iconWhite {
     font-size: 3em;
 }
 
-#arrowIcon{
+#arrowIcon {
     margin-top: 100px;
-    
 }
 
-#ponudbeZamenjav{
+#ponudbeZamenjav {
     min-height: 100vh;
     background-color: #242424;
-
 }
 
 hr {
@@ -52,26 +51,25 @@ hr {
     border-color: white;
 }
 
-#intro{
-    height:100vh;
-    background:url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
+#intro {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#naslovCenter{
-    margin-top:40vh;
+#naslovCenter {
+    margin-top: 40vh;
 }
 
-#nameHeader{
+#nameHeader {
     text-transform: uppercase;
     font-size: 4em;
     color: black;
     font-weight: 300 !important;
 }
 
-#nameHeader2{
-    
+#nameHeader2 {
     text-transform: uppercase;
     font-size: 1.2em;
     color: black;
@@ -190,4 +188,21 @@ hr {
     .top-nav-collapse {
         padding: 2px 0;
     }
+}
+
+
+.ponudbaSingle{
+    padding:5px;
+    min-height:80px;
+box-shadow: 3px 7px 21px 1px rgba(0,0,0,0.75);
+    
+}
+
+.ponudbaSingle:hover{
+    background-color: rgba(60,60,60, 0.4);
+    
+}
+
+.bold{
+    font-weight: 500;
 }
