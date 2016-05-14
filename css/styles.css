@@ -1,8 +1,7 @@
 html, body{
+    background-color: black;
     width: 100%;
-    background:url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    color: white;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -11,7 +10,11 @@ html, body{
 }
 
 section{
-    margin-bottom: 30px;
+    padding: 30px;
+}
+
+i{
+    color:white;
 }
 
 #seznam{
@@ -25,10 +28,166 @@ section{
 .dodajZamenjavo{
     margin-top:50px;
     padding: 10px;
-    background-color: rgba(220,220,220,0.6);
+    /*background-color: rgba(220,220,220,0.6);*/
     border-radius: 5px;
 }
 
-#ponudbeZamenjav{
+.iconWhite{
+    font-size: 3em;
 }
 
+#arrowIcon{
+    margin-top: 100px;
+    
+}
+
+#ponudbeZamenjav{
+    min-height: 100vh;
+    background-color: #242424;
+
+}
+
+hr {
+    max-width: 350px;
+    border-color: white;
+}
+
+#intro{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#naslovCenter{
+    margin-top:40vh;
+}
+
+#nameHeader{
+    text-transform: uppercase;
+    font-size: 4em;
+    color: black;
+    font-weight: 300 !important;
+}
+
+#nameHeader2{
+    
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 300 !important;
+}
+
+.page-scroll {
+    color: white;
+}
+
+#domovButton {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.25em;
+}
+
+.icon-bar {
+    position: relative;
+    background-color: #ffffff !important;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.navbar-toggle.active span:nth-child(2) {
+    position: relative;
+    width: 17px;
+    top: 1px;
+    right: -4px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    background-color: #75AFEF;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+    left: -5px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    background-color: #75AFEF;
+}
+
+.navbar-toggle.active span:nth-child(4) {
+    width: 15px;
+    right: -5px;
+    border-radius: 20%;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background-color: #75AFEF;
+}
+
+.navbar-toggle {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.navbar-toggle:hover {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    background-color: rgba(5, 5, 5, 0.5) !important;
+}
+
+.navbar-default {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 0.25em;
+    margin-top: 9px;
+    padding-top: 20px;
+    font-size: 0.8em;
+    color: white;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgba(240, 240, 240, 0.5);
+}
+
+.navbar-default .navbar-nav > li > a:after {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: rgba(220, 220, 220, 0.1);
+    color: white;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .4s ease-in-out, padding .4s ease-in-out;
+        -moz-transition: background .4s ease-in-out, padding .4s ease-in-out;
+        transition: background .4s ease-in-out, padding .4s ease-in-out;
+    }
+    .top-nav-collapse {
+        padding: 2px 0;
+    }
+}

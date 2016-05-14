@@ -16,29 +16,74 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,500italic,400italic,300italic,100italic,100&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' onload="if(media!='all')media='all'">
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top " id="custom-bootstrap-menu">
+            <div class="container-fluid">
+                <div class="navbar-header page-scroll" id="nav-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top" id="domovButton">DOMOV</a>
+                </div>
 
+                <div class="navbar-right collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav" id="elementeki">
+                        <li class="hidden">
+                            <a class="page-scroll" href="#domov">a</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#ponudbeZamenjav">ZAMENJAVE</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#">NASTAVITVE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
     <section id="intro">
 
         <div class="container text-center">
-            <div class="row">
+            <div class="row" id="naslovCenter">
 
                 <h1 id="nameHeader">FRI MENJALNICA</h1>
                 <hr>
+                <h2 id="nameHeader2">Menjava urnikov - lahka kot še nikoli!</h2>
                 <h3 style="color:white; text-shadow:1px 1px black;"></h3>
             </div>
             <div class="row">
                 <a class="iconWhite" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 <a class="iconWhite" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
+            <div class="row" id="arrowIcon">
+                <a class="iconWhite" href="#"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
         </div>
     </section>
 
 
     <section id="ponudbeZamenjav">
-        <div class="container">
+
+        <div class="container text-center">
+            <div class="row dodajZamenjavo">
+                <div class="col-lg-12 form">
+                    <form class="loginForm">
+                        <h2>Dodaj novo zamenjavo!</h2>
+                        <input type="text" placeholder="predmet" />
+                        <input type="text" placeholder="dan" />
+                        <input type="mail" placeholder="ura" />
+                        <button type="button" class="btn btn-primary" id="oddajZamenjavo">Dodaj!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
 
             <div class="row" id="seznam">
                 <div class="col-lg-12">
@@ -47,24 +92,11 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
-<section id="povprasaj">
-    <div class="container text-center">
-        
-        <div class="row dodajZamenjavo">
-            <div class="col-lg-12 form">
-                <form class="loginForm">
-                    <h2>Dodaj novo zamenjavo!</h2>
-                    <input type="text" placeholder="predmet" />
-                    <input type="text" placeholder="dan" />
-                    <input type="mail" placeholder="ura"/>
-                    <button type="button" class="btn btn-primary" id="oddajZamenjavo">Dodaj!</button>
-                </form>
-            </div>
-            </div>
-        </div>
-    </section>
+
 
 
 
@@ -75,5 +107,7 @@
 
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/login.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script src="js/index.js"></script>
 </body>
