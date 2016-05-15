@@ -66,16 +66,15 @@
         </div>
     </section>
 
-<section id="predmeti">
-        <div class="container">
-            <div class="row" style="height:20vh;">
-                <div class="col-lg-12">
-                    <p>Prva ponudba</p>
-                    <p>Druga</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <form action="ponudba.php" method="post">
+		<input type="text" class="idU" name="idU" placeholder="User">
+		<br>
+		<input type="text" class="idV" name="idV" placeholder="Vaje">
+		<br>
+		<input type="submit" id="sub" value="Post">
+	</form>
+    
 
 
 
