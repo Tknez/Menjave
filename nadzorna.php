@@ -36,12 +36,18 @@
             <div class='row' id='seznam'>
                 <div class='col-lg-12'>
                         <?php
-                        $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
+	                    session_start();
+                    	$vpisna = $_SESSION['vpisna'];
+                    	$query = mysql_query("SELECT iduser FROM user WHERE vpisnaSt='$vpisna'");
+                		$query = mysql_fetch_assoc($query);
+                		$idUser = $query['iduser']; 
+                    	
+                        $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje AND ponudba.user_iduser = '$idUser'";
         				$ponudbaQ = mysql_query($nizP);
         				
         				while($ponudba = mysql_fetch_assoc($ponudbaQ))
         				{
-                            echo "<div class='ponudbaSingle'>";
+                            echo "<div class='ponudbaSingle id='" . $ponudba[idponudba] . "'>";
         				    echo "<div class='col-sm-4'>";
         				    echo "<p class='bold'>Ime: " . $ponudba['ime'] . "</p>";
         				    echo "</div>";
@@ -49,7 +55,7 @@
         				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
         				    echo "</div>";
         				    echo "<div class='col-sm-4'>";
-        				    echo "<a class='iconWhite crosses' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-times' aria-hidden='true'></i></a>";
+        				    echo "<a href='odstrani.php?id=" . $ponudba['idponudba'] . "'>Odstrani</a>";
         				    echo "</div>";
         				    echo "</div>";
         				}
