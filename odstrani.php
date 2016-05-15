@@ -3,18 +3,17 @@
 </head>
 <?php
 
-	$ponudba = mysql_real_escape_string($_GET['id']);
+	$id = $_GET['id'];
 
-	if($ponudba)
+	if(isset($_GET['id']))
 	{
-		$query = mysql_query("DELETE FROM ponudba WHERE idponudba='$ponudba'");
-		$query = mysql_fetch_assoc($query);
+		mysql_query("DELETE FROM ponudba WHERE idponudba='$id'");
 		
-		header('Location: google');
+		header('Location: nadzorna.php');
 
 	}
 	else {
-		header('Location: www.google.si');
+		header('Location: nadzorna');
 	}
 
 ?>
