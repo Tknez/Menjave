@@ -64,26 +64,39 @@
             </div>
         </div>
         
+        <div class="container text-center">
+            <form>
+                <input type="submit" name="btn" class="btn btn-primary" id="ors" value="ORS">
+                <input type="submit" name="btn" class="btn btn-primary" id="ois" value="OIS">
+                <input type="submit" name="btn" class="btn btn-primary" id="aps2" value="APS2">
+                <input type="submit" name="btn" class="btn btn-primary" id="tis" value="TIS">
+                <input type="submit" name="btn" class="btn btn-primary" id="vis" value="VIS">
+            </form>
+        </div>
+        
         <div class="container">
             <div class='row' id='seznam'>
                 <div class='col-lg-12'>
                         <?php
-                        $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
+                        if(isset($_GET['btn']))$nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje AND vaje.predmet='" . $_GET['btn'] . "'";
+                        else $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
         				$ponudbaQ = mysql_query($nizP);
         				
         				while($ponudba = mysql_fetch_assoc($ponudbaQ))
         				{
-                            echo "<div class='ponudbaSingle'>";
-        				    echo "<div class='col-sm-4'>";
-        				    echo "<p class='bold'>Ime: " . $ponudba['ime'] . "</p>";
-        				    echo "</div>";
-        				    echo "<div class='col-sm-4'>";
-        				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
-        				    echo "</div>";
-        				    echo "<div class='col-sm-4'>";
-        				    echo "<a class='iconWhite' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
-        				    echo "</div>";
-        				    echo "</div>";
+        				    
+                                echo "<div class='ponudbaSingle' id='" . $ponudba[idponudba] . "'>";
+            				    echo "<div class='col-sm-4'>";
+            				    echo "<p class='bold'>Ime: " . $ponudba['ime'] . "</p>";
+            				    echo "</div>";
+            				    echo "<div class='col-sm-4'>";
+            				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
+            				    echo "</div>";
+            				    echo "<div class='col-sm-4'>";
+            				    echo "<a class='iconWhite' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
+            				    echo "</div>";
+            				    echo "</div>";
+        				    
         				}
                     ?>
                 </div>
