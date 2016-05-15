@@ -32,6 +32,7 @@
     <section>
         <div class="container">
             <h1>Nadzorna Plošča</h1>
+            <h3>Moje zamenjave:</h3>
             <div class='row' id='seznam'>
                 <div class='col-lg-12'>
                         <?php
@@ -48,7 +49,7 @@
         				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
         				    echo "</div>";
         				    echo "<div class='col-sm-4'>";
-        				    echo "<a class='iconWhite' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-times' aria-hidden='true'></i></a>";
+        				    echo "<a class='iconWhite crosses' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-times' aria-hidden='true'></i></a>";
         				    echo "</div>";
         				    echo "</div>";
         				}

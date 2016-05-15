@@ -39,11 +39,10 @@
                 <h3 style="color:white; text-shadow:1px 1px black;"></h3>
             </div>
             <div class="row">
-                <a class="iconWhite" href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                <a class="iconWhite" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
+                <a class="iconWhite shadow" href="https://urnik.fri.uni-lj.si"><i class="fa fa-clock-o shadow" aria-hidden="true"></i></a>
+                </div>
             <div class="row" id="arrowIcon">
-                <a class="iconWhite page-scroll" href="#ponudbeZamenjav"><i class="fa fa-arrow-down animated infinite bounce" aria-hidden="true"></i></a>
+                <a class="iconWhite page-scroll shadow"><i class="fa fa-arrow-down animated infinite bounce shadow" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
@@ -82,7 +81,7 @@
         				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
         				    echo "</div>";
         				    echo "<div class='col-sm-4'>";
-        				    echo "<a class='iconWhite' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
+        				    echo "<a class='iconWhite envelopez' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
         				    echo "</div>";
         				    echo "</div>";
         				}
