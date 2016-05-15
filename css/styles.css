@@ -38,7 +38,7 @@ i {
 }
 
 #arrowIcon {
-    margin-top: 100px;
+    margin-top:5%;
 }
 
 #ponudbeZamenjav {
@@ -52,14 +52,14 @@ hr {
 }
 
 #intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #naslovCenter {
-    margin-top: 40vh;
+    margin-top: 20%;
 }
 
 #nameHeader {
@@ -83,7 +83,7 @@ hr {
 #domovButton {
     margin-top: 5px;
     margin-left: 5px;
-    font-size: 1em;
+    font-size: 1.3em;
     color: white;
     letter-spacing: 0.25em;
 }
@@ -153,7 +153,7 @@ hr {
     letter-spacing: 0.25em;
     margin-top: 9px;
     padding-top: 20px;
-    font-size: 0.8em;
+    font-size: 1.2em;
     color: white;
     line-height: 0px;
     text-transform: uppercase;
@@ -190,19 +190,16 @@ hr {
     }
 }
 
-
-.ponudbaSingle{
-    padding:5px;
-    min-height:80px;
-box-shadow: 3px 7px 21px 1px rgba(0,0,0,0.75);
-    
+.ponudbaSingle {
+    padding: 5px;
+    min-height: 80px;
+    box-shadow: 3px 7px 21px 1px rgba(0, 0, 0, 0.75);
 }
 
-.ponudbaSingle:hover{
-    background-color: rgba(60,60,60, 0.4);
-    
+.ponudbaSingle:hover {
+    background-color: rgba(60, 60, 60, 0.4);
 }
 
-.bold{
+.bold {
     font-weight: 500;
 }
