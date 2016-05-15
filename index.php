@@ -82,12 +82,12 @@
         <div class="container text-center">
             <div class="row dodajZamenjavo">
                 <div class="col-lg-12 form">
-                    <form class="loginForm">
+                    <form class="loginForm" action="ponudba.php" method="post">
                         <h2>Dodaj novo zamenjavo!</h2>
                         <input type="text" name="predmet" placeholder="predmet" />
                         <input type="text" name="dan" placeholder="dan" />
-                        <input type="mail" name="ura" placeholder="ura" />
-                        <button type="button" class="btn btn-primary" id="oddajZamenjavo">Dodaj!</button>
+                        <input type="mail" name="cas" placeholder="ura" />
+                        <button type="submit" class="btn btn-primary" id="oddajZamenjavo">Dodaj!</button>
                     </form>
                 </div>
             </div>
