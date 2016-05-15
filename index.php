@@ -27,38 +27,9 @@
 	}
 ?>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <nav class="navbar navbar-default navbar-fixed-top " id="custom-bootstrap-menu">
-        <div class="container-fluid">
-            <div class="navbar-header page-scroll" id="nav-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top" id="domovButton">DOMOV</a>
-            </div>
-
-            <div class="navbar-right collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav" id="elementeki">
-                    <li class="hidden">
-                        <a class="page-scroll" href="#domov">a</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#ponudbeZamenjav">ZAMENJAVE</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">NASTAVITVE</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-<body>
+    
+    
     <section id="intro">
-
         <div class="container text-center">
             <div class="row" id="naslovCenter">
 
@@ -72,13 +43,13 @@
                 <a class="iconWhite" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
             <div class="row" id="arrowIcon">
-                <a class="iconWhite" href="#ponudbeZamenjav"><i class="fa fa-arrow-down animated infinite bounce" aria-hidden="true"></i></a>
+                <a class="iconWhite page-scroll" href="#ponudbeZamenjav"><i class="fa fa-arrow-down animated infinite bounce" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
 
 
-    
+<section>    
         <div class="container text-center">
             <div class="row dodajZamenjavo">
                 <div class="col-lg-12 form">
