@@ -1,6 +1,5 @@
 html,
 body {
-    background-color: black;
     width: 100%;
     color: white;
     height: 100%;
@@ -22,7 +21,6 @@ i {
     margin-top: 50px;
     padding: 10px;
     min-height: 40vh;
-    background-color: rgba(10, 10, 10, 0.6);
     border-radius: 5px;
 }
 
@@ -35,6 +33,10 @@ i {
 
 .iconWhite {
     font-size: 3em;
+}
+
+#nadzornaButton{
+    margin-top:20px;
 }
 
 #arrowIcon {
@@ -217,6 +219,9 @@ hr {
     padding: 20px;
     min-height: 80px;
     box-shadow: 3px 7px 21px 1px rgba(0, 0, 0, 0.75);
+    background-color: #C4D3DA;
+    color:black;
+    font-weight: 400;
 }
 
 .ponudbaSingle:hover {

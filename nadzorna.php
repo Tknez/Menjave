@@ -29,11 +29,23 @@
 <body>
     
     
-    <section>
+    <section style="background-color: #E9E9E9;">
         <div class="container">
-            <h1>Nadzorna Plošča</h1>
-            <h3>Moje zamenjave:</h3>
+            
+                            <h1 style="color:black;">Nadzorna Plošča</h1>
+
+                
+            
+            
+                
             <div class='row' id='seznam'>
+                
+                <div class="col-lg-6">
+            <h3 style="color:black;">Moje zamenjave:</h3>
+            </div>
+            <div class="col-lg-6 text-right">
+                <input type="submit" name="btn" class="btn btn-primary" value="Tekoče objave" id="nadzornaButton" onclick="window.location='/nadzorna.php';></input>
+                </div>
                 <div class='col-lg-12'>
                         <?php
                         $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";

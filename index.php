@@ -48,11 +48,11 @@
     </section>
 
 
-<section>    
+<section style="background-color: #E9E9E9;">    
         <div class="container text-center">
             <div class="row dodajZamenjavo">
                 <div class="col-lg-12 form">
-                    <h2>Dodaj novo zamenjavo!</h2>
+                    <h2 style="color:black;">Dodaj novo zamenjavo!</h2>
 
                     <form class="loginForm" action="ponudba.php" method="post">
                         <input type="text" name="predmet" placeholder="predmet" />
@@ -65,6 +65,7 @@
         </div>
         
         <div class="container text-center">
+            <h3 style="color:black;">Filter:</h3>
             <form>
                 <input type="submit" name="btn" class="btn btn-primary" id="ors" value="ORS">
                 <input type="submit" name="btn" class="btn btn-primary" id="ois" value="OIS">
@@ -76,6 +77,12 @@
         
         <div class="container">
             <div class='row' id='seznam'>
+                <div class="col-lg-6">
+                <h3 style="color:black;">Tekoče zamenjave:</h3>
+                </div>
+                <div class="col-lg-6 text-right">
+                <input type="submit" name="btn" class="btn btn-primary" value="Uredi moje objave" id="nadzornaButton" onclick="window.location='/nadzorna.php';"></input>
+                </div>
                 <div class='col-lg-12'>
                         <?php
                         if(isset($_GET['btn']))$nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje AND vaje.predmet='" . $_GET['btn'] . "'";
@@ -88,7 +95,7 @@
         				    
                                 echo "<div class='ponudbaSingle' id='" . $ponudba[idponudba] . "'>";
             				    echo "<div class='col-sm-4'>";
-            				    echo "<p class='bold'>Ime: " . $ponudba['ime'] . "</p>";
+            				    echo "<p class='bold'>" . $ponudba['ime'] . "</p>";
             				    echo "</div>";
             				    echo "<div class='col-sm-4'>";
             				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
