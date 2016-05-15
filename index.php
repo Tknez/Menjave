@@ -94,15 +94,14 @@
         </div>
         
         <div class="container">
-            
+            <div class='row' id='seznam'>
+                <div class='col-lg-12'>
                         <?php
                         $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
         				$ponudbaQ = mysql_query($nizP);
         				
         				while($ponudba = mysql_fetch_assoc($ponudbaQ))
         				{
-        				    echo "<div class='row' id='seznam'>";
-                            echo "<div class='col-lg-12'>";
                             echo "<div class='ponudbaSingle'>";
         				    echo "<div class='col-sm-4'>";
         				    echo "<p class='bold'>Ime: " . $ponudba['ime'] . "</p>";
@@ -111,13 +110,13 @@
         				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
         				    echo "</div>";
         				    echo "<div class='col-sm-4'>";
-        				    echo "<a class='iconWhite' href=" . $ponudba['email'] . "><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
-        				    echo "</div>";
-        				    echo "</div>";
+        				    echo "<a class='iconWhite' href='mailto:" . $ponudba['email'] . "'><i class='fa fa-envelope-o' aria-hidden='true'></i></a>";
         				    echo "</div>";
         				    echo "</div>";
         				}
                     ?>
+                </div>
+            </div>
         </div>
     </section>
                     
