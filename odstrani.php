@@ -14,7 +14,7 @@
 
 	}
 	else {
-		header('Location: nadzorna.php');
+		header('Location: www.google.si');
 	}
 
 ?>
