@@ -11,21 +11,24 @@
 
 	if($predmet && $dan && $cas)
 	{
-		$query = mysql_query("INSERT INTO ponudba (user_iduser, vaje_idvaje) SELECT idvaje FROM vaje WHERE predmet = '$predmet' AND dan = '$dan' AND cas = '$cas'");
-		$stVrstic = mysql_num_rows($query);
-		if($stVrstic != 0)
-		{
-			header('Location: index.html');
-		}
-		else
-		{
-			header('Location: index.html');
-		}
+		$query = mysql_query("SELECT iduser FROM user WHERE vpisnaSt='$vpisna'");
+		$query = mysql_fetch_assoc($query);
+		$idUser = $query['iduser'];
 		
+		$query = mysql_query("SELECT idvaje FROM vaje WHERE predmet='$predmet' AND dan='$dan' AND cas='$cas'");
+		$query = mysql_fetch_assoc($query);
+		if (mysql_num_rows($query) == 0)
+			header('Location: index.php');
+		
+		$idVaje = $query['idvaje'];
+		
+		$query = mysql_query("INSERT INTO ponudba (user_iduser, vaje_idvaje) VALUES ('$idUser', '$idVaje')");
+		
+		if (mysql_num_rows($query) == 0)
+			header('Location: index.php');
 	}
-	else
-	{
-		header('Location: login.html');
+	else {
+		header('Location: index.php');
 	}
-	
+
 ?>
