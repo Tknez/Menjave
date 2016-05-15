@@ -85,8 +85,11 @@
                 </div>
                 <div class='col-lg-12'>
                         <?php
-                        if(isset($_GET['btn']))$nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje AND vaje.predmet='" . $_GET['btn'] . "'";
-                        else $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
+                        if(isset($_GET['btn']))
+                            $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje AND vaje.predmet='" . $_GET['btn'] . "'";
+                        else 
+                            $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
+        				
         				$ponudbaQ = mysql_query($nizP);
         				
         				while($ponudba = mysql_fetch_assoc($ponudbaQ))
