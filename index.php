@@ -72,7 +72,7 @@
                 <a class="iconWhite" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
             <div class="row" id="arrowIcon">
-                <a class="iconWhite" href="#ponudbeZamenjav"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                <a class="iconWhite" href="#ponudbeZamenjav"><i class="fa fa-arrow-down animated infinite bounce" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>

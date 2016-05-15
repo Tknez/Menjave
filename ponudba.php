@@ -4,13 +4,14 @@
 <?php
 	session_start();
 	include ("connect.php");
+	$vpisna = $_SESSION['vpisna'];
 	$predmet = mysql_real_escape_string($_POST['predmet']);
 	$dan = mysql_real_escape_string($_POST['dan']);
-	$ura = mysql_real_escape_string($_POST['ura']);
+	$cas = mysql_real_escape_string($_POST['cas']);
 
-	if($u && $v)
+	if($predmet && $dan && $cas)
 	{
-		$query = mysql_query("INSERT INTO ponudba (user_iduser, vaje_idvaje) SELECT idvaje FROM vaje WHERE predmet = '$predmet' AND dan = '$dan' AND ura = '$ura'");
+		$query = mysql_query("INSERT INTO ponudba (user_iduser, vaje_idvaje) SELECT idvaje FROM vaje WHERE predmet = '$predmet' AND dan = '$dan' AND cas = '$cas'");
 		$stVrstic = mysql_num_rows($query);
 		if($stVrstic != 0)
 		{
