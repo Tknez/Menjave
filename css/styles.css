@@ -35,8 +35,8 @@ i {
     font-size: 3em;
 }
 
-#nadzornaButton{
-    margin-top:20px;
+#nadzornaButton {
+    margin-top: 20px;
 }
 
 #arrowIcon {
@@ -73,6 +73,19 @@ hr {
     right: 0;
 }
 
+.deleteIcon {
+    font-size: 2.5em;
+    position: relative;
+    top: -5px;
+    color: black;
+}
+
+.inputBeautify{
+    border: 1px solid #337ab7;
+    height: 34px;
+    padding-left: 10px;
+}
+
 .crosses {
     position: absolute;
     font-size: 3em;
@@ -82,9 +95,9 @@ hr {
     right: 0;
 }
 
-.shadow{
-    font-size:3.5em;
-    color:black;
+.shadow {
+    font-size: 3.5em;
+    color: black;
 }
 
 #nameHeader {
@@ -218,9 +231,9 @@ hr {
 .ponudbaSingle {
     padding: 20px;
     min-height: 80px;
-    box-shadow: 3px 7px 21px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.65);
     background-color: #C4D3DA;
-    color:black;
+    color: black;
     font-weight: 400;
 }
 

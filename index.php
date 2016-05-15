@@ -39,7 +39,7 @@
                 <h3 style="color:white; text-shadow:1px 1px black;"></h3>
             </div>
             <div class="row">
-                <a class="iconWhite shadow" href="https://urnik.fri.uni-lj.si"><i class="fa fa-clock-o shadow" aria-hidden="true"></i></a>
+                <a class="iconWhite shadow" href='<?php echo 'https://urnik.fri.uni-lj.si/timetable/2015_2016_letni/allocations?student=' . $Vpisna?>'><i class="fa fa-clock-o shadow" aria-hidden="true"></i></a>
                 </div>
             <div class="row" id="arrowIcon">
                 <a class="iconWhite page-scroll shadow"><i class="fa fa-arrow-down animated infinite bounce shadow" aria-hidden="true"></i></a>
@@ -47,18 +47,17 @@
         </div>
     </section>
 
-
 <section style="background-color: #E9E9E9;">    
         <div class="container text-center">
             <div class="row dodajZamenjavo">
                 <div class="col-lg-12 form">
-                    <h2 style="color:black;">Dodaj novo zamenjavo!</h2>
+                    <h2 style="color:black; margin-bottom:40px;">Dodaj novo zamenjavo!</h2>
 
                     <form class="loginForm" action="ponudba.php" method="post">
-                        <input type="text" name="predmet" placeholder="predmet" />
-                        <input type="text" name="dan" placeholder="dan" />
-                        <input type="mail" name="cas" placeholder="ura" />
-                        <button type="submit" class="btn btn-primary" id="oddajZamenjavo">Dodaj!</button>
+                        <input type="text" name="predmet" placeholder="predmet" class="inputBeautify"/>
+                        <input type="text" name="dan" placeholder="dan" class="inputBeautify"/>
+                        <input type="mail" name="cas" placeholder="ura" class="inputBeautify"/>
+                        <button type="submit" class="btn btn-primary" id="oddajZamenjavo" style="position: relative;top: -1px;">Dodaj!</button>
                     </form>
                 </div>
             </div>
@@ -81,7 +80,7 @@
                 <h3 style="color:black;">Tekoče zamenjave:</h3>
                 </div>
                 <div class="col-lg-6 text-right">
-                <input type="submit" name="btn" class="btn btn-primary" value="Uredi moje objave" id="nadzornaButton" onclick="window.location='/nadzorna.php';"></input>
+                <input type="submit" name="btn" class="btn btn-primary" value="Uredi moje objave" id="nadzornaButton" onclick="window.location='/nadzorna.php';" style="position: relative; top: -6px;"></input>
                 </div>
                 <div class='col-lg-12'>
                         <?php

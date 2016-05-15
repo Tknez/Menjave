@@ -29,7 +29,7 @@
 <body>
     
     
-    <section style="background-color: #E9E9E9;">
+    <section style="background-color: #E9E9E9; min-height: 100vh;">
         <div class="container">
             
                             <h1 style="color:black;">Nadzorna Plošča</h1>
@@ -44,7 +44,7 @@
             <h3 style="color:black;">Moje zamenjave:</h3>
             </div>
             <div class="col-lg-6 text-right">
-                <input type="submit" name="btn" class="btn btn-primary" value="Tekoče objave" id="nadzornaButton" onclick="window.location='/nadzorna.php';></input>
+                <input type="submit" name="btn" class="btn btn-primary" value="Tekoče objave" id="nadzornaButton" onclick="window.location='/index.php';"></input>
                 </div>
                 <div class='col-lg-12'>
                         <?php
@@ -66,8 +66,8 @@
         				    echo "<div class='col-sm-4'>";
         				    echo "<p>Ponujam: " . $ponudba['predmet'] . " " . $ponudba['dan'] . " " . $ponudba['cas'] . "</p>";
         				    echo "</div>";
-        				    echo "<div class='col-sm-4'>";
-        				    echo "<a href='odstrani.php?id=" . $ponudba['idponudba'] . "'>Odstrani</a>";
+        				    echo "<div class='col-sm-4 text-right'>";
+        				    echo "<a href='odstrani.php?id=" . $ponudba['idponudba'] . "'><i class='fa fa-times deleteIcon' aria-hidden='true' style='font-size:3em;'></i></a>";
         				    echo "</div>";
         				    echo "</div>";
         				}
