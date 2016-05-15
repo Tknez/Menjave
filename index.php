@@ -52,8 +52,9 @@
         <div class="container text-center">
             <div class="row dodajZamenjavo">
                 <div class="col-lg-12 form">
+                    <h2>Dodaj novo zamenjavo!</h2>
+
                     <form class="loginForm" action="ponudba.php" method="post">
-                        <h2>Dodaj novo zamenjavo!</h2>
                         <input type="text" name="predmet" placeholder="predmet" />
                         <input type="text" name="dan" placeholder="dan" />
                         <input type="mail" name="cas" placeholder="ura" />
