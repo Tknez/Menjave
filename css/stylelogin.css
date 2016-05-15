@@ -1,39 +1,37 @@
-body
-{
-	color: #31353D;
+body {
+	color: #fff;
 	padding: 0px;
 	margin: 0px;
+	background: url("http://dragonhack.si/assets/images/welcome/background.jpg") center center no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	letter-spacing: 0.25em;
 }
 
-.thick
-{
+.thick {
 	font-weight: thick;
-	color: #31353D;
-	font-family: 'Josefin Slab', serif;
+	color: #fff;
 }
 
-.bold
-{
+.bold {
 	font-weight: 900;
-	color: #31353D;
-	font-family: 'Josefin Slab', serif;
+	color: #fff;
 }
 
-#logo
-{
+#logo {
 	margin: 0 auto;
 	margin-top: 11%;
 	width: 400px;
 	height: 75px;
 	border-radius: 5px;
 	font-size: 70px;
-	color: #31353D;
-	font-family: 'Josefin Slab', serif;
+	color: #fff;
 	text-align: center;
 }
 
-#prijava
-{
+#prijava {
 	margin: 0 auto;
 	margin-top: 10px;
 	width: 400px;
@@ -41,8 +39,7 @@ body
 	border-radius: 3px;
 }
 
-input
-{
+input {
 	height: 50px;
 	width: 400px;
 	border-width: 0px;
@@ -54,42 +51,38 @@ input
 	line-height: 15px;
 }
 
-input[type='text']:focus, input[type='password']:focus, input[type='submit']:focus
-{
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='submit']:focus {
 	outline: 0px;
 	font-size: 16px;
 }
 
-.ime
-{
-	border-radius: 3px 3px 0px 0px;;
+.ime {
+	border-radius: 3px 3px 0px 0px;
+	;
 }
 
-.ostalo
-{
-	
-}
+.ostalo {}
 
-#sub
-{
+#sub {
 	background-color: #445878;
 	border-radius: 0px 0px 3px 3px;
 	color: #1C1D21;
 }
 
-#sub:hover
-{
+#sub:hover {
 	background-color: #59729C;
 	cursor: pointer;
 }
 
-#sub:focus
-{
+#sub:focus {
 	font-size: 15px;
 }
 
-a, a:hover, a:active
-{	
+a,
+a:hover,
+a:active {
 	display: inline-block;
 	margin-top: -10px;
 	font-size: 14px;
@@ -97,7 +90,6 @@ a, a:hover, a:active
 	color: #555555;
 }
 
-a:hover
-{
+a:hover {
 	color: #333232;
 }

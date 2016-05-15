@@ -190,23 +190,20 @@ hr {
     }
 }
 
-
-.ponudbaSingle{
-    padding:20px;
-    min-height:80px;
-box-shadow: 3px 7px 21px 1px rgba(0,0,0,0.75);
-    
+.ponudbaSingle {
+    padding: 20px;
+    min-height: 80px;
+    box-shadow: 3px 7px 21px 1px rgba(0, 0, 0, 0.75);
 }
 
-.ponudbaSingle:hover{
-    background-color: rgba(60,60,60, 0.4);
-    
+.ponudbaSingle:hover {
+    background-color: rgba(60, 60, 60, 0.4);
 }
 
-.bold{
+.bold {
     font-weight: 500;
 }
 
-.loginForm{
-    color:black;
+.loginForm {
+    color: black;
 }

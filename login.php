@@ -4,6 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
 	<link rel="icon" type="img/ico" href="favicon.ico">
+	    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,500italic,400italic,300italic,100italic,100&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' onload="if(media!='all')media='all'">
+
 </head>
 
 <?php
@@ -11,7 +13,7 @@
 	session_unset();
 ?>
 
-<body bgcolor="#92CDCF">
+<body>
 	<div id="logo">
 	<font class="bold">FRI</font><font class="thick">menjava</font>
 	</div>
