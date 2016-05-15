@@ -53,7 +53,7 @@ hr {
 
 #intro {
     min-height: 100vh;
-    background: url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890") center center no-repeat;
+    background: url("bg1.jpg") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }

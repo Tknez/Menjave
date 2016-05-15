@@ -21,7 +21,7 @@
 		<form action="log.php" method="post">
 			<input type="text" class="ime" name="Ime" placeholder="Ime">
 			<br>
-			<input type="text" class="ostalo" name="Email" placeholder="email">
+			<input type="text" class="ostalo" name="Email" placeholder="Email">
 			<br>
 			<input type="text" class="ostalo" name="Vpisna" placeholder="Vpisna številka">
 			<br>
