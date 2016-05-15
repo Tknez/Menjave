@@ -33,7 +33,7 @@
         <div class="container text-center">
             <div class="row">
 
-                <h1 id="nameHeader">FRI MENJALNICA</h1>
+                <h1 id="nameHeader"><b>FRI</b>menjava</h1>
                 <hr>
                 <h3 style="color:white; text-shadow:1px 1px black;"></h3>
             </div>
@@ -50,8 +50,17 @@
 
             <div class="row" id="seznam">
                 <div class="col-lg-12">
-                    <p><?php echo $Vpisna; ?></p>
-                    <p>Druga</p>
+                    <?php
+                        $nizP = "SELECT * FROM vaje, user, ponudba WHERE ponudba.user_iduser = user.iduser AND ponudba.vaje_idvaje = vaje.idvaje";
+        				$ponudbaQ = mysql_query($nizP);
+        				
+        				while($ponudba = mysql_fetch_assoc($ponudbaQ))
+        				{
+        				    echo "<div class='ponudba'>";
+        				    echo $ponudba['predmet'] . " - " . $ponudba['dan'] . " - " . $ponudba['cas'];
+        				    echo "</div>";
+        				}
+                    ?>
                 </div>
             </div>
         </div>
